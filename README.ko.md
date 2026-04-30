@@ -4,7 +4,7 @@
 
 ##### [English](README.md) | **한국어**
 
-# 🤖 Docker-Pose-Analyzer (AI 자세 분석 시스템)
+# 🤖 인공지능 포즈 분석 시스템
 > **AI 인공지능 기술을 활용한 전신 자세 및 체형 불균형 분석 솔루션.**
 
 <p align="left">
@@ -71,9 +71,9 @@ graph LR
 ### 설치 및 실행
 1. 프로젝트 최상위 경로로 이동.
 2. 아래 명령어를 입력하여 Docker 서비스 빌드 및 실행.
-   '''bash
+   ```bash
    docker-compose up -d --build
-   '''
+   ```
 3. 웹 브라우저에서 **`http://localhost:8000`** 접속.
 4. 사이드바에서 이미지를 선택하거나 파일을 직접 업로드하여 분석 수행.
 
