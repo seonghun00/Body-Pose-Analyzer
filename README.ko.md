@@ -42,23 +42,17 @@ body-pose-analyzer/
 ---
 
 ## 🔄 Workflow (워크플로우)
-```mermaid
-graph LR
-    A[📸 User Image] --> B{AI Pose Engine}
-    B -- Frontal --> C[⚖️ Symmetry Analysis]
-    B -- Side --> D[🦒 FHP Diagnosis]
-    C --> E[📏 Angle Calculation]
-    D --> F[📐 CVA Measurement]
-    E & F --> G[🚦 5-Level Scoring]
-    G --> H[💾 Save to /outputs]
-```
+<p align="center">
+<img src="https://github.com/user-attachments/assets/50b7331c-3074-4de6-8d64-f51cbe360902" width="100%" alt="실행 결과">
+<sub><em>▲ 이미지 입력부터 분석, 최종 진단 결과 저장까지의 전체 흐름도</em></sub>
+</p>
 
 ---
 
 ## 📊 Result (실행 결과)
 <p align="center">
 <img src="https://github.com/user-attachments/assets/33c2f601-baca-4c56-a90d-875e91d07d11" width="100%" alt="실행 결과">
-<sub><em>▲ 측면 분석 모드에서 거북목(CVA) 각도를 측정하고 위험도를 시각화한 결과 화면.</em></sub>
+<sub><em>▲ 측면 분석 모드에서 거북목(CVA) 각도를 측정하고 위험도를 시각화한 결과 화면</em></sub>
 </p>
 
 ---
