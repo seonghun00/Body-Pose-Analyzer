@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: pose_analyzer_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+      - ./data:/data
+      - ./outputs:/outputs
+    environment:
+      - PYTHONUNBUFFERED=1
+    # 윈도우 환경이므로 /dev/video0 매핑은 제외하고 /data/videos/ 의 영상을 사용합니다.
