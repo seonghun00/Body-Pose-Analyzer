@@ -51,7 +51,7 @@ body-pose-analyzer/
 
 ## 📊 Result (실행 결과)
 <p align="center">
-<img src="https://github.com/user-attachments/assets/33c2f601-baca-4c56-a90d-875e91d07d11" width="100%" alt="실행 결과">
+<img src="https://github.com/user-attachments/assets/996f2da7-510b-4fce-9b35-21d7c081c652" width="100%" alt="실행 결과">
 <sub><em>▲ 측면 분석 모드에서 거북목(CVA) 각도를 측정하고 위험도를 시각화한 결과 화면</em></sub>
 </p>
 
