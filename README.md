@@ -53,10 +53,9 @@ body-pose-analyzer/
 
 ## 📊 Result
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/33c2f601-baca-4c56-a90d-875e91d07d11" width="100%" alt="Result Screenshot">
+  <img src="https://github.com/user-attachments/assets/996f2da7-510b-4fce-9b35-21d7c081c652" width="100%" alt="Result Screenshot">
   <sub><em>▲ Real-time Side Profile Analysis calculating CVA (Craniovertebral Angle) with visual level indicators</em></sub>
 </p>
-
 
 
 ---
