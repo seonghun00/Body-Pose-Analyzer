@@ -44,7 +44,7 @@ body-pose-analyzer/
 ## 🔄 Workflow
 <p align="center">
   <img src="https://github.com/user-attachments/assets/243446d3-1b55-42d2-b798-0c357f17f95c" width="100%" alt="Result Screenshot">
-  <sub><em>▲ Real-time Side Profile Analysis calculating CVA (Craniovertebral Angle) with visual level indicators.</em></sub>
+  <sub><em>▲ automated pipeline from image ingestion to the final diagnostic output and storage</em></sub>
 </p>
 
 
@@ -54,7 +54,7 @@ body-pose-analyzer/
 ## 📊 Result
 <p align="center">
   <img src="https://github.com/user-attachments/assets/33c2f601-baca-4c56-a90d-875e91d07d11" width="100%" alt="Result Screenshot">
-  <sub><em>▲ Real-time Side Profile Analysis calculating CVA (Craniovertebral Angle) with visual level indicators.</em></sub>
+  <sub><em>▲ Real-time Side Profile Analysis calculating CVA (Craniovertebral Angle) with visual level indicators</em></sub>
 </p>
 
 
