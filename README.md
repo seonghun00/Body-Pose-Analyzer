@@ -71,9 +71,9 @@ graph LR
 ### Installation & Usage
 1. Navigate to the project root directory.
 2. Build and run the container:
-   '''bash
+   ```bash
    docker-compose up -d --build
-   '''
+   ```
 3. Access the dashboard at **`http://localhost:8000`**.
 4. Upload an image or select a file from the sidebar to view results.
 
