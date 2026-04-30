@@ -42,16 +42,12 @@ body-pose-analyzer/
 ---
 
 ## 🔄 Workflow
-```mermaid
-graph LR
-    A[📸 User Image] --> B{AI Pose Engine}
-    B -- Frontal --> C[⚖️ Symmetry Analysis]
-    B -- Side --> D[🦒 FHP Diagnosis]
-    C --> E[📏 Angle Calculation]
-    D --> F[📐 CVA Measurement]
-    E & F --> G[🚦 5-Level Scoring]
-    G --> H[💾 Save to /outputs]
-```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/243446d3-1b55-42d2-b798-0c357f17f95c" width="100%" alt="Result Screenshot">
+  <sub><em>▲ Real-time Side Profile Analysis calculating CVA (Craniovertebral Angle) with visual level indicators.</em></sub>
+</p>
+
+
 
 ---
 
@@ -60,6 +56,8 @@ graph LR
   <img src="https://github.com/user-attachments/assets/33c2f601-baca-4c56-a90d-875e91d07d11" width="100%" alt="Result Screenshot">
   <sub><em>▲ Real-time Side Profile Analysis calculating CVA (Craniovertebral Angle) with visual level indicators.</em></sub>
 </p>
+
+
 
 ---
 
