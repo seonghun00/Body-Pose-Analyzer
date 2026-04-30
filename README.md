@@ -4,7 +4,7 @@
 
 ##### **English** | [한국어](README.ko.md)
 
-# 🤖 Docker-Pose-Analyzer
+# 🐳 Docker-Pose-Analyzer
 > **AI-powered body posture and symmetry analysis system with Docker-ready deployment.**
 
 <p align="left">
