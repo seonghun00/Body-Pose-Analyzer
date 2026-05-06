@@ -13,7 +13,7 @@ app = FastAPI(title="Docker-Pose-Analyzer")
 
 templates = Jinja2Templates(directory="templates")
 
-current_mode = "front"
+DEFAULT_MODE = "front"
 analyzers = {
     "front": FrontAnalyzer(),
     "side": SideAnalyzer()
@@ -28,14 +28,12 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
-    return templates.TemplateResponse(request=request, name="index.html", context={"mode": current_mode})
+    return templates.TemplateResponse(request=request, name="index.html", context={"mode": DEFAULT_MODE})
 
 @app.post("/set_mode/{mode}")
 async def set_mode(mode: str):
-    global current_mode
     if mode in analyzers:
-        current_mode = mode
-        return {"status": "success", "mode": current_mode}
+        return {"status": "success", "mode": mode}
     return {"status": "error", "message": "Invalid mode"}
 
 @app.get("/list_images")
@@ -64,8 +62,7 @@ def process_and_save_frame(frame, use_mode, output_filename=None):
 @app.post("/analyze_server_image/{filename}")
 async def analyze_server_image(filename: str, mode: str = Form(None)):
     """서버(/data/images)에 있는 파일을 읽어서 분석하고 결과를 반환 및 저장합니다."""
-    global current_mode
-    use_mode = mode if mode else current_mode
+    use_mode = mode if mode else DEFAULT_MODE
     
     file_path = os.path.join(IMAGE_DIR, filename)
     if not os.path.exists(file_path):
@@ -88,8 +85,7 @@ async def analyze_server_image(filename: str, mode: str = Form(None)):
 @app.post("/analyze_image")
 async def analyze_image(file: UploadFile = File(...), mode: str = Form(None)):
     """웹 브라우저에서 직접 업로드된 파일을 분석합니다."""
-    global current_mode
-    use_mode = mode if mode else current_mode
+    use_mode = mode if mode else DEFAULT_MODE
     
     contents = await file.read()
     nparr = np.frombuffer(contents, np.uint8)
