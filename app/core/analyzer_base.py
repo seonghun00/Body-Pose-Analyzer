@@ -8,10 +8,10 @@ mp_drawing_styles = mp.solutions.drawing_styles
 
 class PoseAnalyzer(ABC):
     def __init__(self):
-        # MediaPipe Pose 인스턴스 초기화
+        # MediaPipe Pose 인스턴스 초기화 (사진 기반 정적 이미지 분석 모드)
         self.pose = mp_pose.Pose(
+            static_image_mode=True,
             min_detection_confidence=0.7,
-            min_tracking_confidence=0.7,
             model_complexity=2
         )
     
